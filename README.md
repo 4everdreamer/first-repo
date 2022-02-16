@@ -1,3 +1,4 @@
-#first-repo
-Repository for learning the basics of git and github
-#Emm
+# first-repo
+## Repository for learning the basics of git and github
+# Emm
+# Andreso
