@@ -1,0 +1,30 @@
+linked list -> data structure
+
+-----------------------------------------
+data structure tiene:
+-nodos
+-length
+
+funciones:
+*inserta nodos
+*elimina nodos
+*busca nodos en cierta posicion
+*busca elementos
+*acomoda los elementos
+*imprime elementos
+
+-----------------------------------------
+el nodo de una data structure tiene:
+-elemento
+-nodo a la izquierda
+-nodo a la derecha
+
+funciones:
+nada
+
+-------------------------------------------
+la linked list hereda de-> data structure
+
+
+
+
