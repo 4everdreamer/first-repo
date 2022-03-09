@@ -1,6 +1,5 @@
 #include "../Headers/DataStructure.h"
+#include <iostream>
 
-DataStructure::DataStructure()
-{
-
-}
+DataStructure::DataStructure() : length(0), ptr_firstNode(nullptr)
+{ std::cout << "Data Structure created"; }
