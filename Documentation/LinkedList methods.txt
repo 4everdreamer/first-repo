@@ -1,0 +1,14 @@
+# getLastElement(): 
+has a counter that starts from 0 and a pointer wich is going to be the last node at the end
+theres a cycle wich is gonna cycle if the counter is lesser than the length of the list -1,
+the counter is going to increment 1 by 1.
+in the cycle we're going to advance the pointer to the pointee's next node
+we finally return the lastNode
+
+# void insertElement(int element)
+it creates a new DataStructureNode with the given element as its element,
+then it gets the last element in the list with the function getLastElement()
+and if this node isn't null, it sets the node's rigth node to the new node
+if it is null, then it sets the firstNode as the new node
+in either of the two cases it adds 1 to the length
+

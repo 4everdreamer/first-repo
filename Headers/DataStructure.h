@@ -11,12 +11,12 @@ public:
     DataStructure();
 
     //Methods
-    virtual void insertElement() = 0;
-    virtual void deleteElement() = 0;
-    virtual int getElementAt() = 0;
-    virtual bool isElementFound() = 0;
+    virtual void insertElement(int element) = 0;
+    virtual void deleteElement(int element) = 0;
+    virtual int getElementAt(int index) = 0;
+    virtual bool isElementFound(int element) = 0;
     virtual void sortElements() = 0;
-    virtual void printElements () = 0;
+    virtual void printElements() = 0;
 
     // getters
     int getLength() { return this->length; }
