@@ -1,14 +1,37 @@
-# getLastElement(): 
+# protected DataStructureNode* getPtr_elementNode(int element):
+it gets an integer to fetch for the first match in the liked list and returns a pointer to it.
+it uses a cycle that repits wihle the current node is not nullptr and 
+current's node element is not equall to the given element, after the cycle it returns
+current element. returns null if the element isnt found.
+
+# protected DataStructureNode* getPtr_lastNode(): 
 has a counter that starts from 0 and a pointer wich is going to be the last node at the end
 theres a cycle wich is gonna cycle if the counter is lesser than the length of the list -1,
 the counter is going to increment 1 by 1.
 in the cycle we're going to advance the pointer to the pointee's next node
 we finally return the lastNode
 
-# void insertElement(int element)
+Public:
+# virtual void insertElement(int element)
 it creates a new DataStructureNode with the given element as its element,
 then it gets the last element in the list with the function getLastElement()
 and if this node isn't null, it sets the node's rigth node to the new node
 if it is null, then it sets the firstNode as the new node
 in either of the two cases it adds 1 to the length
 
+# virtual void deleteElement(int element)	
+takes a integer and uses getPtr_elementNode to fetch it. if the ptr isnt null
+it sets the ptr's
+left node's rigth node to point to the ptr's rigth node
+then it sets the ptr's rigth node's left node to point to the ptr's left node
+like this
+ 
+	 |-----------------ptrLeft
+         v	            |              
+| leftNode | nodeToDelete | rigthNode |
+          |                 ^
+     ptrRigth---------------|
+
+ending like this
+
+| leftNode | rigthNode |

@@ -1,10 +1,11 @@
 #include "DataStructure.h"
 #include "DataStructureNode.h"
 
-class LinkedList : protected DataStructure
+class LinkedList : public DataStructure
 {
 protected:
-    DataStructureNode* getLastNode();
+    DataStructureNode* getPtr_elementNode(int element);
+    DataStructureNode* getPtr_lastNode();
 public:
     //Methods
     LinkedList();
