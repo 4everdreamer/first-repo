@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="Headers" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="Headers" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +34,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Headers/DataItem.h" />
+		<Unit filename="Headers/DataStructure.h" />
+		<Unit filename="Headers/DataStructureNode.h" />
+		<Unit filename="Headers/HashTable.h" />
+		<Unit filename="Headers/LinkedList.h" />
+		<Unit filename="Sources/DataItem.cpp" />
+		<Unit filename="Sources/DataStructure.cpp" />
+		<Unit filename="Sources/DataStructureNode.cpp" />
+		<Unit filename="Sources/HashTable.cpp" />
+		<Unit filename="Sources/LinkedList.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
