@@ -76,10 +76,34 @@ bool LinkedList::isElementFound(int element)
 
 void LinkedList::sortElements()
 {
-
+    if(this->length > 1)
+    {
+        DataStructureNode* currentNode = this->ptr_firstNode->getPtr_nodeToRigth();
+        for(int i = 1; i < this->length; i++)
+        {
+            DataStructureNode* nodeBeingSorted = currentNode;
+            while(nodeBeingSorted->getPtr_nodeToLeft() && nodeBeingSorted->getPtr_nodeToLeft()->getElement() > nodeBeingSorted->getElement())
+            {
+                int elmentInNodeBeingSorted = nodeBeingSorted->getElement(), elementInLeftNode = nodeBeingSorted->getPtr_nodeToLeft()->getElement();
+                nodeBeingSorted->setElement(elementInLeftNode);
+                nodeBeingSorted->getPtr_nodeToLeft()->setElement(elmentInNodeBeingSorted);
+                nodeBeingSorted = nodeBeingSorted->getPtr_nodeToLeft();
+            }
+            currentNode = currentNode->getPtr_nodeToRigth();
+        }
+    }
 }
 
 void LinkedList::printElements()
 {
-
+    DataStructureNode* currentNode = this->ptr_firstNode;
+    int i = 0;
+    std::cout << "--------------- Elements in the linked list ---------------" << std::endl;
+    while(currentNode)
+    {
+        std::cout << "Element at index " << i << ": " << currentNode->getElement() << std::endl;
+        currentNode = currentNode->getPtr_nodeToRigth();
+        i++;
+    }
+    std::cout << "-------------------- ------------------- -------------------" << std::endl;
 }

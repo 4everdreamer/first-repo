@@ -11,20 +11,15 @@ int main()
     newLinkedList->insertElement(1);
     newLinkedList->insertElement(12);
     newLinkedList->insertElement(22);
+    newLinkedList->insertElement(22);
+    newLinkedList->insertElement(5);
 
+    newLinkedList->printElements();
 
-    string isElementFound = newLinkedList->isElementFound(1) ? "True" : "False";
-    cout << isElementFound << endl;
-    newLinkedList->deleteElement(1);
-/*
-    cout << newLinkedList->getElementAt(0) << endl;
-    cout << newLinkedList->getElementAt(1) << endl;
-    cout << newLinkedList->getElementAt(2) << endl;
-    cout << newLinkedList->getElementAt(3) << endl;
-*/
-    isElementFound = newLinkedList->isElementFound(1) ? "True" : "False";
-    cout << isElementFound << endl;
+    newLinkedList->sortElements();
 
+    cout << endl;
+    newLinkedList->printElements();
 
     return 0;
 }
