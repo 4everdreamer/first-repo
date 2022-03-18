@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1647579961 source:d:\repositorios\first-repo\main.cpp
+	<iostream>
+	"Headers/DataStructure.h"
+	"Headers/LinkedList.h"
+
+1646885949 d:\repositorios\first-repo\headers\datastructure.h
+	"DataStructureNode.h"
+
+1646802848 d:\repositorios\first-repo\headers\datastructurenode.h
+
+1647016956 d:\repositorios\first-repo\headers\linkedlist.h
+	"DataStructure.h"
+	"DataStructureNode.h"
+
+1647580262 source:d:\repositorios\first-repo\sources\linkedlist.cpp
+	<iostream>
+	"../Headers/LinkedList.h"
+
+1647577414 source:d:\repositorios\first-repo\sources\datastructure.cpp
+	"../Headers/DataStructure.h"
+	<iostream>
+
+1647577383 source:d:\repositorios\first-repo\sources\datastructurenode.cpp
+	"../Headers/DataStructureNode.h"
+	<iostream>
+

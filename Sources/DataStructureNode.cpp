@@ -2,12 +2,10 @@
 #include <iostream>
 
 // Constructors
-DataStructureNode::DataStructureNode() : ptr_nodeToLeft(nullptr), ptr_nodeToRigth(nullptr)
-{ std::cout << "Base Node created"; }
+DataStructureNode::DataStructureNode() : ptr_nodeToLeft(nullptr), ptr_nodeToRigth(nullptr) {  }
 
 DataStructureNode::DataStructureNode(DataStructureNode* leftNodeValue, DataStructureNode* rigthNodeValue, int elementValue)
-                                    : ptr_nodeToLeft(leftNodeValue), ptr_nodeToRigth(rigthNodeValue), element(elementValue)
-{ std::cout << "Complete Node created"; }
+                                    : ptr_nodeToLeft(leftNodeValue), ptr_nodeToRigth(rigthNodeValue), element(elementValue) {  }
 
 // Getters
 DataStructureNode* DataStructureNode::getPtr_nodeToLeft() { return this->ptr_nodeToLeft; }
