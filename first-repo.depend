@@ -30,3 +30,9 @@
 
 1647640643 d:\repositorios\first-repo\headers\hashtable.h
 
+1648096918 source:d:\repositorios\first-repo\sources\dataitem.cpp
+	"../Headers/DataItem.h"
+
+1648096918 d:\repositorios\first-repo\headers\dataitem.h
+	<string>
+

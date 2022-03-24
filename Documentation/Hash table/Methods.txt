@@ -1,0 +1,6 @@
+void insertElement(int key, string element):
+this method inserts a new element
+first we need to know if the table isn't full
+then we convert the given key into an index with the hashFunction
+now, if the resulting index is already ocupied we jump to the next free index, remember to go round the array
+create a new data item with the key and elements and save it in the correct index

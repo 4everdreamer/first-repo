@@ -1,10 +1,15 @@
 #pragma once
+#include <iostream>
+#include <string>
+#include <vector>
+#include "DataItem.h"
 
 class HashTable
 {
 private:
-    int* arrayOfElements;
+    std::vector<DataItem> arrayOfElements;
     int length;
+    int numberOfElementsInTable;
 
     int hashFunction(int key);
 public:
@@ -12,9 +17,9 @@ public:
     ~HashTable();
 
     // Methods
-    void insertElement(int element);
-    void deleteElement(int element);
+    void insertElement(int key, std::string element);
+    void deleteElement(int key);
     int getElement(int key);
-    bool isElementFound(int element);
+    bool isElementFound(std::string element);
     void printElements();
 };
