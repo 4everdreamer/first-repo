@@ -12,4 +12,8 @@ public:
     // Getters
     int getKey();
     std::string getItem();
+
+    // Setters
+    void setKey(int keyValue);
+    void setItem(std::string itemValue);
 };

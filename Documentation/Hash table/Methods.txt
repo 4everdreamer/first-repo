@@ -1,6 +1,33 @@
+DataItem* getPtr_DataItem(int key)
+convert the key into an index
+compare if the key in the index is equall to the given key
+if not go to the next index until the key matches, remember to go round the table
+if the number of loops are greater than the length, return nullptr
+return andress of DataItem
+
+Public:
 void insertElement(int key, string element):
 this method inserts a new element
 first we need to know if the table isn't full
 then we convert the given key into an index with the hashFunction
 now, if the resulting index is already ocupied we jump to the next free index, remember to go round the array
 create a new data item with the key and elements and save it in the correct index
+
+void deleteElement(int key)
+search for the given key with getPtr_DataItem
+if the ptr isn't null set ptr's key to -1 substract 1 from length
+else cout that the key wasn't found
+
+void getElement(int key)
+getPtr_DataItem
+if the ptr isn't null return ptr_DataItem's item
+else return ""
+
+bool isElementFound(string element)
+uses a for loop to loop through all elements
+if the element of the data item stored in the i position of the vector equals the element being search it returns true
+if the program exits the for loop it returns false
+
+void HashTable::printElements()
+with a for loop it loops through the entire HashTable
+if the key of the data item stored in the i position of the vector isn't -1 it prints the key and item

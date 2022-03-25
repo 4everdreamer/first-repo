@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1647582294 source:d:\repositorios\first-repo\main.cpp
+1648179917 source:d:\repositorios\first-repo\main.cpp
 	<iostream>
 	"Headers/DataStructure.h"
 	"Headers/LinkedList.h"
+	"Headers/HashTable.h"
 
 1647640204 d:\repositorios\first-repo\headers\datastructure.h
 	"DataStructureNode.h"
@@ -25,14 +26,18 @@
 	"../Headers/DataStructureNode.h"
 	<iostream>
 
-1647641399 source:d:\repositorios\first-repo\sources\hashtable.cpp
+1648177550 source:d:\repositorios\first-repo\sources\hashtable.cpp
 	"../Headers/HashTable.h"
 
-1647640643 d:\repositorios\first-repo\headers\hashtable.h
+1648178068 d:\repositorios\first-repo\headers\hashtable.h
+	<iostream>
+	<string>
+	<vector>
+	"DataItem.h"
 
-1648096918 source:d:\repositorios\first-repo\sources\dataitem.cpp
+1648146288 source:d:\repositorios\first-repo\sources\dataitem.cpp
 	"../Headers/DataItem.h"
 
-1648096918 d:\repositorios\first-repo\headers\dataitem.h
+1648146251 d:\repositorios\first-repo\headers\dataitem.h
 	<string>
 
